@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="528.0" prefWidth="748.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="mainTable" layoutX="1.0" layoutY="176.0" prefHeight="307.0" prefWidth="748.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="100.0" />
+          <TableColumn fx:id="c2" prefWidth="100.0" />
+            <TableColumn fx:id="c3" prefWidth="100.0" />
+            <TableColumn fx:id="c4" prefWidth="100.0" />
+            <TableColumn fx:id="c5" prefWidth="100.0" />
+            <TableColumn fx:id="c6" prefWidth="100.0" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnLastChanges" layoutX="353.0" layoutY="126.0" mnemonicParsing="false" onAction="#clickLastChanges" prefHeight="35.0" prefWidth="105.0" text="Last changes">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button fx:id="btnWeightByCustomer" layoutX="273.0" layoutY="81.0" mnemonicParsing="false" onAction="#clickWeightByCustomer" prefHeight="35.0" prefWidth="105.0" text="Weight by customer">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button fx:id="btnWeightByProduct" layoutX="273.0" layoutY="36.0" mnemonicParsing="false" onAction="#clickWeightByProduct" prefHeight="35.0" prefWidth="105.0" text="Weight by product">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button fx:id="btnValueByProduct" layoutX="431.0" layoutY="36.0" mnemonicParsing="false" onAction="#clickValueByProduct" prefHeight="35.0" prefWidth="105.0" text="Value by product">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button fx:id="btnValueByCustomer" layoutX="431.0" layoutY="81.0" mnemonicParsing="false" onAction="#clickValueByCustomer" prefHeight="35.0" prefWidth="105.0" text="Value by customer">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <AnchorPane layoutX="614.0" layoutY="8.0" prefHeight="166.0" prefWidth="121.0">
+         <children>
+            <ComboBox fx:id="cbProducts" layoutY="33.0" onAction="#changePeriod" prefHeight="24.0" prefWidth="110.0" />
+            <Label layoutY="113.0" prefHeight="25.0" prefWidth="75.0" text="Period:">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutY="15.0" prefHeight="25.0" prefWidth="75.0" text="Product:">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutY="65.0" prefHeight="25.0" prefWidth="75.0" text="Customer:">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbPeriods" layoutY="131.0" onAction="#changePeriod" prefHeight="24.0" prefWidth="110.0" />
+            <ComboBox fx:id="cbCustomers" layoutY="83.0" onAction="#changePeriod" prefHeight="24.0" prefWidth="110.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnCustomerDetails" layoutX="48.0" layoutY="46.0" mnemonicParsing="false" onAction="#clickCustomerDetails" prefHeight="35.0" prefWidth="105.0" text="Customer details">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnProductDetails" layoutX="48.0" layoutY="99.0" mnemonicParsing="false" onAction="#clickProductDetails" prefHeight="35.0" prefWidth="105.0" text="Product details">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Line endX="-25.0" endY="-38.0" layoutX="226.0" layoutY="38.0" startX="-25.0" startY="138.0" stroke="#00000077" strokeWidth="0.25" />
+      <Line endX="-25.0" endY="-35.0" layoutX="627.0" layoutY="36.0" startX="-25.0" startY="140.0" stroke="#00000077" strokeWidth="0.25" />
+      <Label layoutX="345.0" layoutY="2.0" prefHeight="25.0" prefWidth="121.0" text="Reports based on filters:">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="659.0" layoutY="1.0" prefHeight="25.0" prefWidth="37.0" text="Filters:">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="3.0" prefHeight="25.0" prefWidth="84.0" text="Standard reports:">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnExit" layoutX="333.0" layoutY="484.0" mnemonicParsing="false" onAction="#clickExit" prefHeight="35.0" prefWidth="84.0" text="Exit" />
+   </children>
+</AnchorPane>
