@@ -1,4 +1,4 @@
-# SalesPlanner
+# h3 SalesPlanner
 
 * Application for demand control
 
